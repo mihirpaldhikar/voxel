@@ -1,0 +1,26 @@
+{
+  "name": "@mihirpaldhikar/voxel",
+  "version": "0.0.1",
+  "description": "The Semantic Drag and Drop website builder.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mihirpaldhikar/voxel.git"
+  },
+  "keywords": [
+    "Builder",
+    "Website Builder",
+    "Drag and Drop",
+    "React.js",
+    "React"
+  ],
+  "author": "Mihir Paldhikar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mihirpaldhikar/voxel/issues"
+  },
+  "homepage": "https://github.com/mihirpaldhikar/voxel#readme"
+}
