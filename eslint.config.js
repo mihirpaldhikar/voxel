@@ -24,41 +24,42 @@ import globals from "globals";
 import pluginJs from "@eslint/js";
 import tseslint from "typescript-eslint";
 import pluginReactConfig from "eslint-plugin-react/configs/recommended.js";
-
+import eslintConfigPrettier from "eslint-config-prettier";
 
 export default [
-    {
-        files: ["**/*.{js,mjs,cjs,ts,jsx,tsx}"]
+  {
+    files: ["**/*.{js,mjs,cjs,ts,jsx,tsx}"],
+  },
+  {
+    rules: {
+      "@typescript-eslint/no-non-null-assertion": "off",
+      "no-empty": "error",
+      "no-empty-function": "error",
+      "no-unused-vars": [
+        "error",
+        {
+          args: "after-used",
+          argsIgnorePattern: "^_",
+        },
+      ],
     },
-    {
-        rules: {
-            "@typescript-eslint/no-non-null-assertion": "off",
-            "no-empty": "error",
-            "no-empty-function": "error",
-            "no-unused-vars": [
-                "error",
-                {
-                    "args": "after-used",
-                    "argsIgnorePattern": "^_"
-                }
-            ]
-        }
+  },
+  {
+    languageOptions: {
+      parserOptions: {
+        ecmaFeatures: {
+          jsx: true,
+        },
+      },
     },
-    {
-        languageOptions: {
-            parserOptions: {
-                ecmaFeatures: {
-                    jsx: true
-                }
-            }
-        }
+  },
+  {
+    languageOptions: {
+      globals: globals.browser,
     },
-    {
-        languageOptions: {
-            globals: globals.browser
-        }
-    },
-    pluginJs.configs.recommended,
-    ...tseslint.configs.recommended,
-    pluginReactConfig,
+  },
+  pluginJs.configs.recommended,
+  ...tseslint.configs.recommended,
+  pluginReactConfig,
+  eslintConfigPrettier,
 ];
