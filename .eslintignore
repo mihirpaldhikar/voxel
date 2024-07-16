@@ -1,0 +1,14 @@
+### IDEs Artifacts ###
+.idea
+.vscode
+*.iml
+
+### NodeJS Artifacts ###
+node_modules
+
+### Build Artifacts ###
+dist
+
+### Config Files ###
+*.config.js
+*.config.cjs
