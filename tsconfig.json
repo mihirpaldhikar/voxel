@@ -4,6 +4,7 @@
     "module": "ES2022",
     "moduleResolution": "bundler",
     "declarationDir": "types",
+    "rootDir": "src",
     "outDir": "dist",
     "jsx": "react-jsx",
     "strictFunctionTypes": true,
@@ -16,7 +17,8 @@
     "emitDeclarationOnly": true,
     "allowSyntheticDefaultImports": true,
     "sourceMap": true,
-    "alwaysStrict": true
+    "alwaysStrict": true,
+    "declarationMap": true
   },
   "include": ["src/**/*", "eslint.config.js"],
   "exclude": ["node_modules"]
