@@ -31,6 +31,10 @@
   "files": [
     "dist"
   ],
+  "peerDependencies": {
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0"
+  },
   "devDependencies": {
     "@eslint/js": "^9.7.0",
     "@rollup/plugin-commonjs": "^26.0.1",
