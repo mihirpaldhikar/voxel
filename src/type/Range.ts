@@ -20,4 +20,14 @@
  * SOFTWARE.
  */
 
-export { DeviceType, Unit, Range } from "./type";
+import Unit from "./Unit";
+
+
+type Range = {
+  start: number;
+  end: number;
+  default: number;
+  unit: Unit
+}
+
+export default Range;
