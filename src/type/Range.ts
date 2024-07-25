@@ -27,7 +27,7 @@ type Range = {
   start: number;
   end: number;
   default: number;
-  unit: Unit
+  unit?: Unit
 }
 
 export default Range;
