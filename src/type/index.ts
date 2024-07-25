@@ -20,4 +20,5 @@
  * SOFTWARE.
  */
 
-export type { DeviceType } from "./DeviceType";
+export type { default as DeviceType } from "./DeviceType";
+export type { default as Unit } from "./Unit";

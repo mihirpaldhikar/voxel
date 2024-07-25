@@ -20,4 +20,6 @@
  * SOFTWARE.
  */
 
-export type DeviceType = "mobile" | "tablet" | "desktop";
+type DeviceType = "mobile" | "tablet" | "desktop";
+
+export default DeviceType;

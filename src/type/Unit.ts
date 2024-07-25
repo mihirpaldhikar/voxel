@@ -20,4 +20,6 @@
  * SOFTWARE.
  */
 
-export { DeviceType, Unit } from "./type";
+type Unit = "cm" | "mm" | "Q" | "in" | "pc" | "pt" | "px" | "em" | "rem" | "vh" | "vw";
+
+export default Unit;
