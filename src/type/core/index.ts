@@ -20,6 +20,5 @@
  * SOFTWARE.
  */
 
-export type { DeviceType, Unit } from "./core";
-export type { default as Range } from "./Range";
-export type { default as Input } from "./Input";
+export type { default as Unit } from "./Unit";
+export type { default as DeviceType } from "./DeviceType";
