@@ -20,4 +20,4 @@
  * SOFTWARE.
  */
 
-export { DeviceType } from "./type";
+export type DeviceType = "mobile" | "tablet" | "desktop";
