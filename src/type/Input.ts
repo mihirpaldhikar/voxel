@@ -20,4 +20,11 @@
  * SOFTWARE.
  */
 
-export { DeviceType, Unit, Range, Input } from "./type";
+import Unit from "./Unit";
+
+type Input = {
+  default: string | number;
+  unit?: Unit;
+}
+
+export default Input;

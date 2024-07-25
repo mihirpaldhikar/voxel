@@ -23,3 +23,4 @@
 export type { default as DeviceType } from "./DeviceType";
 export type { default as Unit } from "./Unit";
 export type { default as Range } from "./Range";
+export type { default as Input } from "./Input";
